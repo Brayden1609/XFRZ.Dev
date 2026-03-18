@@ -35,10 +35,8 @@ header {
     border-bottom: 1px solid #1a1a1a;
 }
 
-.logo {
-    font-weight: 600;
-    font-size: 20px;
-    letter-spacing: 1px;
+.logo img {
+    height: 40px;
 }
 
 .hero {
@@ -167,8 +165,16 @@ a:hover {
 <body>
 
 <header>
-    <div class="container">
-        <div class="logo">XFRZ.Dev</div>
+    <div class="container" style="display:flex; align-items:center; justify-content:space-between;">
+        <!-- Clickable hosted logo -->
+        <a href="index.html">
+            <img src="https://i.postimg.cc/dQzZzR4y/copilot_image_1773831746209.png" alt="XFRZ.Dev Logo">
+        </a>
+
+        <div class="buttons">
+            <a href="#work">View Work</a>
+            <a href="#contact">Request Service</a>
+        </div>
     </div>
 </header>
 
@@ -215,6 +221,7 @@ a:hover {
 <section id="work" class="section container">
     <h2>Selected Work</h2>
 
+    <div class="grid">
         <div class="project">
             <h3>XFRZ.SECURITY</h3>
             <span>Server Threat Verification • Security</span>
