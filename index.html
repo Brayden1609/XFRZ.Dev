@@ -127,6 +127,37 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+/* Tooltip styling for Discord */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    color: #3b82f6;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: max-content;
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 8px;
+    position: absolute;
+    z-index: 1;
+    font-size: 13px;
+    bottom: 125%; /* above the text */
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
 </style>
 </head>
 
@@ -221,7 +252,12 @@ a:hover {
 <section id="contact" class="section container">
     <h2>Contact</h2>
     <p style="color:#888;">
-        For business inquiries, reach out via Discord or email.
+        For business inquiries, reach out via 
+        <a href="mailto:inmanbrayden929@gmail.com">Email</a>  
+        or 
+        <span class="tooltip">Discord
+            <span class="tooltiptext">inman.xfrz</span>
+        </span>.
     </p>
 </section>
 
